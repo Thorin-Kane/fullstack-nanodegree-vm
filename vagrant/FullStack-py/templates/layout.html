@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+{% block title %}
+	<title>Restaurant Example</title>
+{% endblock %}
+{% block head %}
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "viewport" content="width=device-width, initial-scale=1">
+	</head>
+{% endblock %}
+{% block styles %}
+	<!-- <link rel="stylesheet" type="text/css"
+			href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">	 -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="{{ url_for('static', filename = 'css/style.css') }}">
+	<style type="text/css">
+		.img{
+			height:auto;
+			padding: 15px;
+		}
+	</style>
+{% endblock %}
+{% block navbar %}
+	<nav class = "navbar navbar-inverse" role = "navigation">
+		<div class = "container-fluid">
+			<div class = "navbar-header">
+				<a class = "navbar-brand" href="/main">
+					<span class="glyphicon glyphicon-home"></span>
+				</a>
+			</div>
+		</div>
+	</nav>
+{% endblock %}
+{% block content %}
+<body>
+
+</body>
+{% endblock %}
+</html>
